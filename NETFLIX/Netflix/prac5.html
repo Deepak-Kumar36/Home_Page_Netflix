@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+input, button {
+height: 50px; width: 250px; margin-left: 10px;
+}
+</style>
+<script> function fact() {
+let a = document.getElementById('a').value; let f = 1; if (a == '') {
+alert("Enter the value");
+}
+else {
+for (i = a; i > 0; i--)
+{
+f = f * i;
+}
+document.getElementById('b').value =  f;
+} }
+function square() {
+let a = document.getElementById('a').value; if (a == '')
+{
+alert("Enter the value");
+}
+else {
+let f = (a * a); document.getElementById('b').value = f;
+} }
+function cube() {
+let a = document.getElementById('a').value; if (a == '')
+{
+alert("Enter the value");
+}
+
+else {
+ 
+let f =( a * a * a); document.getElementById('b').value = f;
+}
+}
+</script>
+</head>
+<body>
+<div id="d">
+<div>
+Enter Any No. <input type="text" id="a">
+Result :- <input type="text" id="b"><br><br></div>
+<div><button onclick="fact()">factorial</button>
+<button onclick="square()">Square</button>
+<button onclick="cube()">Cube</button>
+</div>
+</div>
+</body>
+</html>
